@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import './Header.css';
+import logoImg from '../../fotos/logo/Logo Plastica Working (1).png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="header">
-      <div className="header-content">
-        <div className="logo-img-container">
-          <img src="/fotos/logo/Logo Plastica Working (1).png" alt="GW Plástica Working" className="logo-img" />
-        </div>
-        <div className="logo-text-center">
-          <h1>GW Plástica Working</h1>
-          <p className="tagline">YogaTeamWorking</p>
+      <div className="container header-content">
+        <div className="logo">
+          <img src={logoImg} alt="GW Plástica Working" className="logo-img" />
+          <div className="logo-text">
+            <h1>GW Plástica Working</h1>
+            <p className="tagline">YogaTeamWorking</p>
+          </div>
         </div>
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <a href="#desafio">Desafío</a>

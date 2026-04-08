@@ -1,7 +1,7 @@
 .header {
   background: linear-gradient(135deg, #FF8C00 0%, #5B4B8A 100%);
   color: white;
-  padding: 20px 0;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,39 +13,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px 0 20px;
+  gap: 40px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.logo-img-container {
+  flex-shrink: 0;
+  margin-left: 30px;
 }
 
 .logo-img {
-  height: 60px;
+  height: 120px;
   width: auto;
 }
 
-.logo-text {
+.logo-text-center {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.logo h1 {
+.logo-text-center h1 {
   font-size: 1.9em;
   font-weight: 800;
   margin-bottom: 5px;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
+  color: white;
 }
 
-.logo .tagline {
+.logo-text-center .tagline {
   font-size: 0.85em;
   font-weight: 300;
   opacity: 0.95;
   margin: 0;
   font-family: 'Lora', serif;
   letter-spacing: 2px;
+  color: white;
+}
+
+.logo {
+  display: none;
 }
 
 .nav {

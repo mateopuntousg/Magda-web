@@ -8,12 +8,12 @@ function Programas() {
     {
       id: 1,
       titulo: 'Yoga para Equipos',
-      subtitulo: 'Cooperación y Confianza para el entorno laboral',
+      subtitulo: 'Cooperación y Confianza en el entorno laboral',
       descripcion: 'Fortalece los vínculos dentro de tu equipo de trabajo',
       objetivos: [
         'Aumentar la cohesión y la sensación de bienestar del equipo',
         'Fomentar una atmósfera grupal de pertenencia y cooperación',
-        'Ofrecer una herramienta para enfrentar desafíos personales'
+        'Ofrecer una herramienta para enfrentar desafíos personales y laborales'
       ],
       detalles: 'La misión de este programa es fortalecer los vínculos dentro del equipo, apoyar el bienestar personal y mejorar la productividad.',
       fotos: [
@@ -34,7 +34,7 @@ function Programas() {
         'Incrementar la Fuerza de Voluntad',
         'Fortalecer la Resistencia al Estrés'
       ],
-      detalles: 'Ofrecemos una experiencia personalizada de Coaching, utilizando como herramienta complementaria el aprendizaje de posturas de Yoga.',
+      detalles: 'Ofrecemos una experiencia personalizada de Coaching, utilizando como herramienta la experiencia física y sicológica que ofrece el aprendizaje de las posturas de Yoga.',
       fotos: [
         'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop',
@@ -43,7 +43,7 @@ function Programas() {
     },
     {
       id: 3,
-      titulo: 'Yoga para Ocupaciones de Alta Exigencia',
+      titulo: 'Yoga para ocupaciones de mediana y alta exigencia física',
       subtitulo: 'Biomecánica y Relajación',
       descripcion: 'Optimiza postura y bienestar en trabajos exigentes',
       objetivos: [
@@ -71,7 +71,7 @@ function Programas() {
     <section id="programas" className="programas section">
       <div className="container">
         <h2 className="section-title">Nuestros Programas</h2>
-        <p className="section-subtitle">Programas diseñados para empresas que buscan mejorar el bienestar y la productividad de sus equipos a través de sesiones grupales.</p>
+        <p className="section-subtitle">Diseñamos Programas para organizaciones y empresas que buscan mejorar el bienestar y productividad de sus equipos.</p>
         
         <div className="grid">
           {programaExpandido ? (
@@ -88,7 +88,9 @@ function Programas() {
                       <h3>{programa.titulo}</h3>
                       <p className="subtitulo">{programa.subtitulo}</p>
                     </div>
-                    <div className="programa-logo">GW</div>
+                    <div className="programa-logo">
+                      <img src="/fotos/logo/Logo Plastica Working (1).png" alt="Plástica Working Logo" />
+                    </div>
                   </div>
                   
                   <div className="programa-contenido">

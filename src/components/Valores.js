@@ -5,7 +5,7 @@ function Valores() {
   const valores = [
     {
       id: 1,
-      icon: '✦',
+      icon: '◉',
       title: 'Pertenencia',
       description: '79% de colaboradores se sienten más comprometidos cuando la empresa promueve hábitos saludables. Creamos espacios donde cada persona siente que es parte valiosa del equipo, fortaleciendo vínculos y cohesión grupal.'
     },
@@ -17,7 +17,7 @@ function Valores() {
     },
     {
       id: 3,
-      icon: '◉',
+      icon: '✦',
       title: 'Bienestar Integral',
       description: 'El yoga enseña alineación postural, biomecánica, meditación, control respiratorio y relajación. Activamos plasticidad neuronal para generar cambios sostenibles en comportamiento, resiliencia y salud mental.'
     }
@@ -35,13 +35,12 @@ function Valores() {
   return (
     <section id="valores" className="valores section">
       <div className="container">
-        <h2 className="section-title">Qué Aportamos</h2>
+        <h2 className="section-title">Qué aportamos en Plástica Working</h2>
         
         {/* Texto introductorio */}
         <div className="intro-text">
           <p>
-            Estudios recomiendan integrar salud mental y actividad física en espacios laborales para reducir la tasa de morbilidad y licencias médicas. 
-            El yoga utiliza técnicas de alineación postural, biomecánica corporal, meditación y relajación. 
+            Diversos estudios recomiendan integrar salud mental y actividad física en espacios laborales para reducir la tasa de morbilidad y licencias médicas. El yoga utiliza técnicas de alineación postural, biomecánica corporal, meditación y relajación, que integramos en un trabajo de coordinación grupal para potenciar dimensiones de interés para las organizaciones.
           </p>
         </div>
 

@@ -72,12 +72,16 @@
 
 .hero h1 {
   font-size: 3.8em;
-  margin-bottom: 15px;
+  margin-bottom: 75px;
   font-weight: 800;
   line-height: 1.1;
   animation: slideUp 1s ease;
   letter-spacing: -1px;
   font-family: 'Playfair Display', serif;
+  margin-top: -100px;
+  color: #5B4B8A;
+  -webkit-text-stroke: 1.5px white;
+  text-stroke: 1.5px white;
 }
 
 .hero h2 {

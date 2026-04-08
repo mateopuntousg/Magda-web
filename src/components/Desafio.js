@@ -29,14 +29,13 @@ function Desafio() {
   return (
     <section id="desafio" className="desafio section">
       <div className="container">
-        <h2 className="section-title">El Desafío Nacional</h2>
+        <h2 className="section-title">El Desafío País que nos Motiva</h2>
         
         <div className="desafio-intro">
           <p>
-            Chile enfrenta una crisis silenciosa en el bienestar laboral y la salud mental. 
-            Los empleados reportan crecientes niveles de insatisfacción, ausencias por enfermedad 
-            y problemas de salud física. Las empresas pierden productividad mientras sus colaboradores 
-            luchan en silencio.
+            Las organizaciones reportan crecientes niveles de insatisfacción laboral, ausencia por enfermedades 
+            y problemas de salud física, social y mental. Las empresas pierden productividad mientras sus 
+            colaboradores luchan en silencio
           </p>
         </div>
 

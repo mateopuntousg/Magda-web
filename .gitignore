@@ -7,7 +7,4 @@ dist/
 *.log
 *.tif
 *.tiff
-*.tif
-*.tiff
-*.tif
-*.tiff
+package-lock.json

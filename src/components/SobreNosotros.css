@@ -148,7 +148,7 @@
 }
 
 .equipo-foto-2 {
-  object-position: 0 -20px;
+  object-position: 0 -28px;
 }
 
 .equipo-foto-3 {
@@ -207,7 +207,7 @@
 }
 
 .equipo-especialidades li:before {
-  content: '•';
+  content: '';
   color: #FF8C00;
   font-weight: bold;
   position: absolute;

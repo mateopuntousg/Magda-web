@@ -13,7 +13,7 @@ function Footer() {
         
         <div className="contacto-wrapper">
           <div className="contacto-info">
-            <h3>Ponte en contacto</h3>
+            <h3>Apoyamos tus Objetivos</h3>
             <div className="info-item">
               <span className="icon">📧</span>
               <p>plasticaworking@gmail.com</p>
