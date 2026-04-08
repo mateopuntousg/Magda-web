@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -53,6 +54,11 @@ module.exports = (env, argv) => {
           removeComments: true,
           collapseWhitespace: true,
         } : false,
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: 'public/fotos', to: 'fotos' },
+        ],
       }),
     ],
     resolve: {
