@@ -11,8 +11,7 @@ function Header() {
           <img src="/fotos/logo/Logo Plastica Working (1).png" alt="GW Plástica Working" className="logo-img" />
         </div>
         <div className="logo-text-center">
-          <h1>GW Plástica Working</h1>
-          <p className="tagline">YogaTeamWorking</p>
+          <h1 className="tagline">YogaTeamWorking</h1>
         </div>
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <a href="#desafio">Desafío</a>

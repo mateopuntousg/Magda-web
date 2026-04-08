@@ -38,19 +38,19 @@
 .logo-text-center h1 {
   font-size: 1.9em;
   font-weight: 800;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   color: white;
+  margin: 0;
 }
 
 .logo-text-center .tagline {
-  font-size: 0.85em;
-  font-weight: 300;
-  opacity: 0.95;
+  font-size: 1.9em;
+  font-weight: 800;
   margin: 0;
-  font-family: 'Lora', serif;
-  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
   color: white;
 }
 
@@ -99,13 +99,40 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    gap: 10px;
+    position: relative;
+  }
+
+  .logo-img-container {
+    margin-left: 0;
+  }
+
+  .logo-img {
+    height: 80px;
+  }
+
+  .logo-text-center h1 {
+    font-size: 1.2em;
+  }
+
+  .logo-text-center .tagline {
+    font-size: 1.2em;
+  }
+
   .menu-toggle {
     display: block;
   }
 
   .nav {
-    position: absolute;
-    top: 60px;
+    position: fixed;
+    top: 120px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -114,15 +141,18 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    z-index: 99;
   }
 
   .nav.active {
-    max-height: 300px;
+    max-height: 350px;
   }
 
   .nav a {
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    text-align: center;
   }
 
   .logo h1 {

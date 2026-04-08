@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: '/PlasticaWorking/',
+      publicPath: isProduction ? '/PlasticaWorking/' : '/',
       clean: true,
     },
     devServer: {
@@ -17,6 +17,9 @@ module.exports = (env, argv) => {
       hot: true,
       historyApiFallback: true,
       compress: true,
+      static: {
+        directory: path.join(__dirname, 'public'),
+      },
     },
     module: {
       rules: [
