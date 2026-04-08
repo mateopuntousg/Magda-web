@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Programas.css';
+import { getImagePath } from '../utils/imagePath';
 
 function Programas() {
   const [programaExpandido, setProgramaExpandido] = useState(null);
@@ -89,7 +90,7 @@ function Programas() {
                       <p className="subtitulo">{programa.subtitulo}</p>
                     </div>
                     <div className="programa-logo">
-                      <img src="/fotos/logo/Logo Plastica Working (1).png" alt="Plástica Working Logo" />
+                      <img src={getImagePath('/fotos/logo/Logo Plastica Working (1).png')} alt="Plástica Working Logo" />
                     </div>
                   </div>
                   

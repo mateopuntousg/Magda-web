@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Carrusel.css';
+import { getImagePath } from '../utils/imagePath';
 
 function Carrusel() {
   const images = [
@@ -52,7 +53,7 @@ function Carrusel() {
     '/fotos/expositorias/carrusel/fotosabastible2.JPG',
     '/fotos/expositorias/carrusel/fotosabastible4.JPG',
     '/fotos/expositorias/carrusel/fotosabstibl.JPG'
-  ];
+  ].map(getImagePath);
 
   const columnRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);

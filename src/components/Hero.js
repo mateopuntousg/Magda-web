@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Hero.css';
+import { getImagePath } from '../utils/imagePath';
 
 function Hero() {
   const frases = [
@@ -21,7 +22,7 @@ function Hero() {
     '/fotos/expositorias/ hero/fotosabastible2.JPG',
     '/fotos/expositorias/hero/fotosabastible4.JPG',
     '/fotos/expositorias/hero/fotosabstibl.JPG'
-  ];
+  ].map(getImagePath);
 
   const imageRef = useRef(null);
 
