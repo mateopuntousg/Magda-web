@@ -1,5 +1,6 @@
 import React from 'react';
 import './SobreNosotros.css';
+import { getImagePath } from '../utils/imagePath';
 
 function SobreNosotros() {
   const testimonios = [];
@@ -9,7 +10,7 @@ function SobreNosotros() {
       id: 1,
       nombre: 'Magdalena Goddard',
       rol: 'Directora de Proyecto',
-      foto: "/fotos/personas/Magdalena.jpg",
+      foto: getImagePath("/fotos/personas/Magdalena.jpg"),
       especialidades: [
         'Socióloga, Posgrado en Cooperación para el Desarrollo',
         'Coach Newfield Network',
@@ -25,7 +26,7 @@ function SobreNosotros() {
       id: 2,
       nombre: 'Claudia Zepeda',
       rol: 'Profesora de Yoga',
-      foto: "/fotos/personas/claudia.jpg",
+      foto: getImagePath("/fotos/personas/claudia.jpg"),
       especialidades: [
         'Profesora Certificada de Hatha Yoga',
         'Escuela Chilena de Yoga',
@@ -38,7 +39,7 @@ function SobreNosotros() {
       id: 3,
       nombre: 'Jandy Ruiz',
       rol: 'Profesora de Yoga',
-      foto: "/fotos/personas/handi.jpg",
+      foto: getImagePath("/fotos/personas/handi.jpg"),
       especialidades: [
         'Profesora Certificada Dynamic Yoga',
         'Profesora Certificada Aero Yoga',
