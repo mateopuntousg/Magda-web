@@ -1,6 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import './Hero.css';
-import { getImagePath } from '../utils/imagePath';
+
+// Carga automática de todas las imágenes en public/fotos/expositorias/hero/
+const heroContext = require.context('../../public/fotos/expositorias/hero', false, /\.(jpe?g|png|gif|webp)$/i);
 
 function Hero() {
   const frases = [
@@ -16,17 +18,14 @@ function Hero() {
     return frases[Math.floor(Math.random() * frases.length)];
   });
 
-  const images = [
-    '/fotos/expositorias/hero/fotos abas.JPG',
-    '/fotos/expositorias/hero/fotos abasti.JPG',
-    '/fotos/expositorias/ hero/fotosabastible2.JPG',
-    '/fotos/expositorias/hero/fotosabastible4.JPG',
-    '/fotos/expositorias/hero/fotosabstibl.JPG'
-  ].map(getImagePath);
+  const images = useMemo(() => {
+    return heroContext.keys().map(key => heroContext(key));
+  }, []);
 
   const imageRef = useRef(null);
 
   useEffect(() => {
+    if (images.length <= 1) return;
     let index = 0;
     const total = images.length * 2;
     const interval = setInterval(() => {
